@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent"
+    tools:context="com.webrication.smartapplocker.Activity.UnlockMetodActivity">
+  <RelativeLayout
+      android:layout_width="0dp"
+      android:layout_height="0dp"
+      app:layout_constraintLeft_toLeftOf="parent"
+      app:layout_constraintRight_toRightOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintBottom_toBottomOf="parent">
+
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="Smart AppLock"
+          android:textColor="#fff"
+          android:textSize="25sp"
+          android:gravity="center"
+          android:layout_marginBottom="50dp"
+          android:layout_above="@+id/pin"
+          android:fontFamily="sans-serif-condensed"/>
+      <Button
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_above="@+id/pattern"
+          android:textColor="@color/app_color"
+          android:textAllCaps="false"
+          android:textSize="18sp"
+          android:layout_marginRight="10dp"
+          android:layout_marginLeft="10dp"
+          android:id="@+id/pin"
+          android:fontFamily="sans-serif-condensed"
+          android:layout_marginBottom="40dp"
+          android:shadowColor="@color/colorPurple"
+          android:background="@drawable/button_corner"
+          android:text="Unlock with PIN"/>
+
+      <Button
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:textColor="@color/app_color"
+          android:textAllCaps="false"
+          android:textSize="18sp"
+          android:id="@+id/pattern"
+          android:textColorHint="@color/colorPurple"
+          android:fontFamily="sans-serif-condensed"
+          android:layout_marginRight="10dp"
+          android:layout_marginLeft="10dp"
+          android:layout_centerVertical="true"
+          android:layout_centerHorizontal="true"
+          android:background="@drawable/button_corner"
+          android:text="Unlock with Pattern"/>
+
+      <Button
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:textColor="@color/app_color"
+          android:textAllCaps="false"
+          android:layout_below="@+id/pattern"
+          android:id="@+id/gesture"
+          android:fontFamily="sans-serif-condensed"
+          android:textSize="18sp"
+          android:layout_marginRight="10dp"
+          android:layout_marginLeft="10dp"
+          android:layout_marginTop="40dp"
+          android:background="@drawable/button_corner"
+          android:text="Unlock with Gesture"/>
+
+      <ImageView
+          android:layout_width="70dp"
+          android:layout_height="70dp"
+          android:id="@+id/pi"
+          android:layout_marginRight="20dp"
+          android:layout_alignTop="@+id/pa"
+          android:layout_toLeftOf="@+id/pa"
+          android:src="@drawable/dial"
+          android:layout_below="@+id/gesture"/>
+
+      <ImageView
+          android:layout_width="70dp"
+          android:layout_height="70dp"
+          android:id="@+id/pa"
+          android:src="@drawable/pattern"
+          android:layout_marginTop="50dp"
+          android:layout_centerHorizontal="true"
+          android:layout_below="@+id/gesture"/>
+
+      <ImageView
+          android:layout_width="70dp"
+          android:layout_height="70dp"
+          android:id="@+id/ges"
+          android:src="@drawable/draw"
+          android:layout_marginLeft="20dp"
+          android:layout_alignTop="@id/pa"
+          android:layout_toRightOf="@+id/pa"
+          android:layout_below="@+id/gesture"/>
+
+  </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Smart AppLock</string>
+
+    <string name="app_locked_gesture">This app is Locked. Draw gesture to unlock.</string>
+    <string name="draw_gesture">Draw your signature here</string>
+    <string name="forgot_gesture">Forget Gesture ?</string>
+    <string name="pass_hint">Enter four digit pin</string>
+    <string name="splash_message">The Freedom to Secure Your Apps</string>
+
+    <string name="create_gesture">Please setup your gesture lock</string>
+    <string name="confirm_gesture">Draw again to confirm your gesture</string>
+    <string name="gesture_set">Gesture lock set!</string>
+    <string name="gesture_dont_match">Gesture do not matched</string>
+    <string name="gesture_dont_match_message">The gesture is not matched. Please draw again</string>
+    <string name="unlock_self_gesture">Draw the gesture to unlock</string>
+    <string name="pattern_textView">Please setup your pattern lock</string>
+
+    <string name="create_pin">Before you start adding apps, please setup pin lock</string>
+    <string name="pin_do_not_match_message">The PIN you entered do not match. Please re-enter a PIN</string>
+    <string name="pin_do_not_match">PIN do not match</string>
+    <string name="pin_set">Unlock PIN set!</string>
+    <string name="forgot_pin"><u>FORGOT PIN ?</u></string>
+    <string name="pin_confirm">Enter again to confirm your PIN</string>
+
+    <string name="permission">
+        In Android 5.0 or above, you must permit usage access for Smart AppLock
+        click switch to Enable.
+    </string>
+    <string name="permission_over">
+        In Android 6.0 or above, you must permit drawing over other apps for Smart AppLock
+    </string>
+
+</resources>

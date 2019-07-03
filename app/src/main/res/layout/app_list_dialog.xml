@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="44dp"
+    android:id="@+id/spinner"
+    android:text="Select app to lock"
+    android:textSize="20sp"
+    android:gravity="center"
+    android:background="@color/colorPrimary"
+    android:textColor="@color/white"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginRight="1dp"
+        android:layout_below="@+id/spinner"
+        android:id="@+id/view"
+        android:background="@color/app_color"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/view"
+        android:layout_above="@+id/button"
+        android:visibility="visible"
+        android:id="@+id/recycler">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select"
+        android:id="@+id/button"
+        android:textColor="#fff"
+        android:layout_alignParentBottom="true"
+        android:background="@color/app_color"
+        android:textSize="18sp"/>
+</RelativeLayout>

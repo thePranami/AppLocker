@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent"
+    tools:context="com.webrication.smartapplocker.Activity.GestureUnlockActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lin"
+        android:layout_above="@+id/gestureOverlayView"
+        android:layout_alignParentTop="true"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/tv_unlock_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:gravity="center"
+            android:textColor="#fff"
+            android:fontFamily="sans-serif-condensed"
+            android:textSize="18sp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/unlock_self_gesture"/>
+    </RelativeLayout>
+
+    <android.gesture.GestureOverlayView
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:background="#fff"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:gestureColor="@color/buttonSelector"
+        android:id="@+id/gestureOverlayView">
+        <TextView
+            android:id="@+id/tv_gesture_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/draw_gesture"
+            android:layout_gravity="center"
+            android:textColor="@color/app_color"
+            android:fontFamily="sans-serif-condensed"
+            android:textAppearance="?android:textAppearanceLarge"
+            android:padding="5dp"/>
+    </android.gesture.GestureOverlayView>
+    <Button
+        android:id="@+id/id_btn_forgot_gesture"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:padding="5dp"
+        android:textColor="#fff"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:fontFamily="sans-serif-condensed"
+        android:textSize="18sp"
+        android:text="@string/forgot_gesture"
+        android:background="@drawable/button_select"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="10dp" />
+
+
+</RelativeLayout>

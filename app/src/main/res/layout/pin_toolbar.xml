@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/linear"
+    android:layout_width="match_parent"
+    android:layout_height="45dp"
+    android:fitsSystemWindows="true"
+    app:contentInsetStartWithNavigation="0dp"
+    app:contentInsetEnd="0dp"
+    android:elevation="5dp"
+    android:background="@color/colorPrimary"
+    app:contentInsetStart="0dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/back"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+           android:paddingLeft="1dp"
+            />
+        <TextView
+            android:id="@+id/heading_TV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pin Lock"
+            android:textColor="#000"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            />
+
+        <ImageView
+            android:id="@+id/clear"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/more"
+            android:paddingTop="10dp"
+            android:visibility="gone"
+            android:layout_alignParentRight="true"
+            android:paddingBottom="10dp"
+            android:paddingLeft="1dp"
+            />
+    </RelativeLayout>
+
+</android.support.v7.widget.Toolbar>

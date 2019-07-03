@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+  <RelativeLayout
+      xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto"
+      android:layout_width="match_parent"
+      android:background="#fff"
+      android:layout_height="wrap_content">
+
+  <TextView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:id="@+id/detail"
+      android:textSize="16sp"
+      android:textColor="@color/colorWhite"
+      android:background="@color/colorPrimary"
+      android:padding="10dp"
+      android:textStyle="bold"
+      android:gravity="center"
+      android:text="Security Question"/>
+
+  <View
+      android:layout_width="match_parent"
+      android:layout_height="2dp"
+      android:id="@+id/view"
+      android:layout_below="@+id/detail"
+      android:background="#b9bfb9"/>
+  <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_below="@+id/view"
+      android:id="@+id/spinner22"
+      android:layout_marginLeft="10dp"
+      android:layout_marginTop="20dp"
+      android:layout_marginRight="10dp"
+      android:background="@drawable/edittext_boarder"
+      android:layout_height="45dp">
+  <Spinner
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:id="@+id/spinner"
+      android:layout_centerHorizontal="true"
+      android:layout_centerVertical="true"
+      android:textColor="#000" />
+
+  </RelativeLayout>
+
+  <EditText
+      android:layout_width="match_parent"
+      android:layout_height="45dp"
+      android:hint="Enter Your answer"
+      android:textSize="18sp"
+      android:layout_marginLeft="10dp"
+      android:layout_marginRight="10dp"
+      android:layout_below="@+id/spinner22"
+      android:id="@+id/nick"
+      android:gravity="center"
+      android:fontFamily="sans-serif-condensed"
+      android:background="@drawable/edittext_boarder"
+      android:layout_marginTop="20dp"
+      android:layout_centerHorizontal="true"/>
+
+  <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="45dp"
+      android:layout_marginTop="25dp"
+      android:layout_marginBottom="15dp"
+      android:gravity="center"
+      android:layout_below="@+id/nick">
+<!--
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Skip"
+        android:textColor="@color/app_color"
+        android:background="@drawable/dialog_corner"
+        android:layout_alignParentLeft="true"
+        android:textSize="16sp"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/skip"/>
+  -->
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:background="@drawable/dialog_corner"
+        android:id="@+id/Save"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:layout_marginBottom="10dp"
+        android:textColor="@color/app_color"/>
+  </RelativeLayout>
+
+</RelativeLayout>

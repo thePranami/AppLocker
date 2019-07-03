@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimaryDark">#790e8b</color>
+    <color name="colorPrimary">#ab47bc</color>
+    <color name="colorAccent">#df78ef</color>
+
+    <color name="colorGreen">#008000</color>
+    <color name="colorRed">#FF0000</color>
+    <color name="colorDarkRed">#8B0000</color>
+    <color name="colorYellow">#FFFF00</color>
+    <color name="colorSilver">#C0C0C0</color>
+    <color name="colorGray">#808080</color>
+    <color name="colorOrange">#fd670f</color>
+    <color name="colorPinkDark">#cc3896</color>
+    <color name="colorVoilet">#440a7f</color>
+    <color name="colorParrot">#678900</color>
+    <color name="colorPinkLight">#ee82ee</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorWhite">#ffffff</color>
+    <color name="colorGreenLight">#00a3aa</color>
+    <color name="colorPurple">#990000</color>
+    <color name="colorDeepSkyBlue">#00bfff</color>
+    <color name="colorDodgerBlue">#1e90ff</color>
+    <color name="colorSkyBlue">#87ceeb</color>
+    <color name="colorLightSkyBlue">#87cefa</color>
+    <color name="colorDeepOrange">#ffab91</color>
+    <color name="colorDeepPurple">#7e57c2</color>
+    <color name="black_overlay">#66000000</color>
+    <color name="activeBackground">#0099cc</color>
+    <color name="buttonSelector">#224b69</color>
+    <color name="background_list_apps">#224b69</color>
+    <color name="button_welcome">#195893</color>
+    <color name="orange_paging">#ffdd713f</color>
+    <color name="app_color">#224b69</color>
+    <color name="button">#ffffff</color>
+</resources>

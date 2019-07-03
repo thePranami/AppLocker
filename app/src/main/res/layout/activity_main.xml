@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.webrication.smartapplocker.Activity.MainActivity">
+
+ <android.support.design.widget.AppBarLayout
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:id="@+id/appbar">
+  <include
+      layout="@layout/profile_toolbar">
+
+  </include>
+
+ </android.support.design.widget.AppBarLayout>
+
+<android.support.v7.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    android:id="@+id/add"
+    app:cardElevation="5dp"
+    app:cardCornerRadius="3dp"
+    android:layout_below="@+id/appbar"
+    android:background="@color/app_color"
+    android:layout_marginTop="10dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp">
+
+ <RelativeLayout
+     android:layout_width="match_parent"
+     android:layout_height="match_parent">
+
+  <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Add New Apps to Smart\nAppLock"
+      android:textColor="#000"
+      android:textSize="18sp"
+      android:layout_centerVertical="true"
+      android:layout_centerHorizontal="true"
+      android:gravity="center"
+      />
+ </RelativeLayout>
+</android.support.v7.widget.CardView>
+
+ <android.support.v7.widget.RecyclerView
+     android:layout_width="match_parent"
+     android:layout_height="match_parent"
+     android:id="@+id/recycler"
+     android:layout_below="@+id/add"
+     android:background="@color/colorAccent">
+
+ </android.support.v7.widget.RecyclerView>
+
+ <ProgressBar
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:id="@+id/progress"
+     android:visibility="gone"
+     android:layout_centerVertical="true"
+     android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>
